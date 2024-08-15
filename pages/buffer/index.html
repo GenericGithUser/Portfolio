@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>buffer</title>
+</head>
+<body>
+	<div class="header">
+		<h1>Number Buffer Sorter</h1>
+		<h2>Input 6 Numbers in the input box, and it will sort it to the highest number to the lowest number</h2>
+		<h2>Use <span>Spaces</span> to separate the numbers, only <span>6 numbers</span> are allowed</h2>
+	</div>	
+	<div class="main">
+		<input type="text" name="inpbox" id="inpbox" ><br>
+		<button  class="btn" onclick="putNum()">SUBMIT</button>
+		<button  class="btn clr" onclick="tryAgain()">CLEAR</button>
+	</div>
+	<div class="output">
+		<table  cellspacing="0" align="center" class="tbl1">
+			<tr class="tbl1">
+				<td class="tda">0</td>
+				<td class="tda">0</td>
+				<td class="tda">0</td>
+				<td class="tda">0</td>
+				<td class="tda">0</td>
+				<td class="tda">0</td>
+			</tr>
+		</table>
+		<table cellpadding="10px" cellspacing="0" align="center" id="spec">
+			<tr>
+				<td id="buffer">0</td>
+			</tr>
+		</table>
+	</div>
+	<div id="errbox">
+		<h1>NUMBERS EXCEEDED 6 NUMBERS, RESETTING.....</h1>
+	</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

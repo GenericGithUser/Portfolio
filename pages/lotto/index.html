@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Lottery Something</title>
+</head>
+<body>
+	<div class="header">
+		<h1>MEGA LOTTO 6/46</h1>
+		<h3>Enter A Six Combination of Numbers Ranging from 1-46</h3>
+		<h3>And if you guessed the correct combination you might receive a prize</h3>
+	</div>
+	<div class="frm" id="frm">
+		<input type="text" name="inpbx" id="inpbx">
+		<button id="subbtn" onclick="chckNow()">CHECK NOW</button>
+
+	</div>
+	<div id="resultWin">
+		<h1>YOU HAVE GUEESED THE CORRECT COMBINATION. YOU HAVE WON</h1>
+		<img src="./win.jpg" alt="win">
+		<button class="trAgin" onclick="window.location.reload()">TRY YOUR LUCK AGAIN?</button>
+	</div>
+	<div id="resultpar">
+		<h2 id="txt">You've almost got it, you've only got <span id="count3"></span> correct combinations</h2>
+		<button class="trAgin" onclick="window.location.reload()">TRY AGAIN?</button>
+	</div>
+	<div id="resultLose">
+		<p id="res2"></p>
+		<button class="trAgin" onclick="window.location.reload()">TRY AGAIN?</button>
+	</div>
+</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
