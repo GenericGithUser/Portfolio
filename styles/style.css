@@ -358,16 +358,20 @@ body{
 }
 @media only screen and (max-width: 380px){
     .aboutMe ul{
-        font-size: 1.2ch;
+        font-size: 1ch;
     }
     .aboutTitle{
         font-size: 2ch;
     }
     .me{
-        width: 45vh;
+        width: 30vh;
     }
     .accompTitle{
         font-size: 3.5ch;
+    }
+.profLangs{
+        font-size: 1.8ch;
+        
     }
 }
 @media only screen and (max-width: 340px){
