@@ -310,7 +310,7 @@ body{
     .navigation ul{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr) ;
-        row-gap: 10px;
+        gap: 15px;
         margin: 1px;
     }
     .aboutMe ul{
@@ -348,9 +348,7 @@ body{
     .navigation{
         padding: 1vh;
     }
-    .navigation ul{
-    gap: 10px; 
-}
+   
    .langContainer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
