@@ -347,6 +347,9 @@ body{
     .navigation{
         padding: 1vh;
     }
+    .navigation ul{
+    gap: 10px; 
+}
    .langContainer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
