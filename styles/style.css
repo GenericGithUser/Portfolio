@@ -357,8 +357,11 @@ body{
    }
 }
 @media only screen and (max-width: 380px){
+    .box {
+     padding: 14px;
+     }
     .aboutMe ul{
-        font-size: 1ch;
+        font-size: 1.2ch;
     }
     .aboutTitle{
         font-size: 2ch;
