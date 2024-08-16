@@ -13,8 +13,8 @@
         <ul>
             <li><a href="#top">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="">WORKS</a></li>
-            <li><a href="">ACCOMPLISMENTS</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#accomp">ACCOMPLISMENTS</a></li>
         </ul>
     </div>
     <div class="banner" id="top">
@@ -25,10 +25,10 @@
             <h2 class="aboutTitle" id="about">About Me</h2>
             <img src="./assets/me.jpg" alt="missing" class="me">
             <h3 class="aboutMe">
-                Hello! I'm Gian
+                <p class="name">Hello! I'm Gian</p>
                 <ul>
                     <li><span class="orange">Full Name:</span>Gianmarlo Adrian S. Abril</li>
-                    <li><span class="orange">Nicknames:</span>Generic/RickeyRodent</li>
+                    <li><span class="orange">Nicknames:</span>Generic / RickeyRodent</li>
                     <li><span class="orange">Age:</span> 19</li>
                     <li><span class="orange">Attended Schools:</span>
                         <ul>
@@ -61,13 +61,109 @@
                 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener noreferrer"><img src="./assets/java.png" alt="missing" class="logo"></a>
                 
             </div>
-        </div>
-        <div class="box works">
-            <h2 class="worksTitle">Works</h2>
-            <div class="workBox">
-                
+            <h2 class="media profLangs">Contact and Socials</h2>
+            <div class="conContainer langContainer">
+                <a href="https://www.facebook.com/khoramshahr.13/" target="_blank" rel="noopener noreferrer"><img src="./assets/fb.png" alt="missing" class="logo"></a>
+                <a href="https://x.com/GenTwitUserr" target="_blank" rel="noopener noreferrer"><img src="./assets/bird.png" alt="missing" class="logo"></a>
+                <a href="mailto:personakkount@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/email.png" alt="missing" class="logo"></a>
+                <a href="https://github.com/GenericGithUser" target="_blank" rel="noopener noreferrer" class="special"><img src="./assets/github.png" alt="missing" class="logo"></a>
             </div>
         </div>
+        <div class="box works">
+            <h2 class="worksTitle" id="works">Works</h2>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Student Directory</h3>
+                <img src="" alt="missing" class="workBoxPreview1">
+                <br><button class="showDescriptionBtn temp1" onclick="show()">Show Description</button>
+                <br><button class="closeBtn hide temp2" onclick="hide()">Hide Description</button>
+                <br><h4 class="description hide temp3">The Student Directory, a Student Infromation System web application made during Grade 11 and was our Final Project. It is a collabortive work between me and Julius Castillejo, with some help of our other group mates. It has two functions, to view grades and info of students and modifying its info.</h4>
+                <br><a href="https://github.com/GenericGithUser/studentDirectory" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code (No Live Preview Available)</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Image Gallery</h3>
+                <img src="./pages/imggal-main/prev.png" alt="missing" class="workBoxPreview">
+                <br><button class="imgals temp1" onclick="show1()">Show Description</button>
+                <br><button class="imgalc hide temp2" onclick="hide1()">Hide Description</button>
+                <br><h4 class="imgald hide temp3">An Image Gallery, it was made for a performance task on the Empowerment Technology Subject, it features random pictures. The site itself is very minimalistic.</h4>
+                <br><a href="https://github.com/GenericGithUser/imggal" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/imggal-main/web/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Buffer Sorter</h3>
+                <img src="./pages/buffer/prev.png" alt="missing" class="workBoxPreview">
+                <br><button class="buffs temp1" onclick="show2()">Show Description</button>
+                <br><button class="buffc hide temp2" onclick="hide2()">Hide Description</button>
+                <br><h4 class="buffd hide temp3">A Number sorter, that sorts from highest to lowest, its suppose to use a bubble sorter algorithim, but I didn't have the time to implement it.</h4>
+                <br><a href="https://github.com/GenericGithUser/newcomp/tree/main/pages/buffer" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/buffer/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Lotto Simulator</h3>
+                <img src="./pages/lotto/prev.png" alt="missing" class="workBoxPreview">
+                <br><button class="lottos temp1" onclick="show3()">Show Description</button>
+                <br><button class="lottoc hide temp2" onclick="hide3()">Hide Description</button>
+                <br><h4 class="lottod hide temp3">A Lotto Simulator, where you guess the correct number combination, it is completly random and its kind've impossible to guess the correct number.</h4>
+                <br><a href="https://github.com/GenericGithUser/newcomp/tree/main/pages/lotto" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/lotto/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Final Grade Calculator</h3>
+                <img src="./pages/gradecalc/prev.png" alt="missing" class="workBoxPreview">
+                <br><button class="grades temp1" onclick="show4()">Show Description</button>
+                <br><button class="gradec hide temp2" onclick="hide4()">Hide Description</button>
+                <br><h4 class="graded hide temp3">A Final Grade Calculator, it was as a performance task, and shows my early days at using JavaScript, as it is still primitive compared to the others. It takes in all the grades from your subjects and their respective period, then computes for the final grade.</h4>
+                <br><a href="https://github.com/GenericGithUser/newcomp/tree/main/pages/gradecalc" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/gradecalc/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">A Lightulb</h3>
+                <img src="./pages/bulbs/prev.PNG" alt="missing" class="workBoxPreview">
+                <br><button class="bulbs temp1" onclick="show41()">Show Description</button>
+                <br><button class="bulbc hide temp2" onclick="hide41()">Hide Description</button>
+                <br><h4 class="bulbd hide temp3">A Ligthbulb, it represents my first interaction with JavaScript, it turns on and off.</h4>
+                <br><a href="https://github.com/GenericGithUser/newcomp/tree/main/pages/bulbs" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/bulbs/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">English and Grammar Guide Website</h3>
+                <img src="./pages/pt2.2-main/prev.png" alt="missing" class="workBoxPreview">
+                <br><button class="engs temp1" onclick="show5()">Show Description</button>
+                <br><button class="engc hide temp2" onclick="hide5()">Hide Description</button>
+                <br><h4 class="engd hide temp3">A Simple English Grammar Guide site where there is some important information about the English Language and it also includes a test in the end. It only includes HTML and CSS.</h4>
+                <br><a href="https://github.com/GenericGithUser/pt2.2" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
+                <br><a href="./pages/pt2.2-main/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            </div>
+            <div class="workBox">
+                <h3 class="workBoxTitle">Java Multiple Chocie Questionnaire</h3>
+                <img src="./pages/mcqprev.png" alt="missing" class="workBoxPreview">
+                <br><button class="mcqs temp1" onclick="show6()">Show Description</button>
+                <br><button class="mcqc hide temp2" onclick="hide6()">Hide Description</button>
+                <br><h4 class="mcqd hide temp3">A Multple Choice Questionnaire, made in Java. It is a proof concept for our final project in Java Programming, it is a 15 question questionnaire that grades your performance in answering it.</h4>
+                <br><a href="https://github.com/GenericGithUser/MCQ2" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code (No Live Preview Available)</a>
+            </div>
+        </div>
+        <div class="box accomp">
+            <h2 class="accompTitle" id="accomp">Accomplishments</h2>
+            <h3 class="accompNote">
+                I don't really have awards relating to programming, only academic awards, so here's some:
+            </h3>
+            <ul class="accompList ">
+                <li>🥈 - Academic Achiever Award: With High Honors - 12th Grade</li>
+                <li>🥈 - Academic Achiever Award: With High Honors - 11th Grade
+                    <ul class="accompList">
+                        <li>🏅 Best in Computer Programming</li>
+                        <li>🏅 Best in Practial Research 1</li>
+                        <li>🏅 Best in Understanding Culture Society and Poltics</li>
+                        <li>🏅 Best in Statistics and Probability</li>
+                        <li>🏅 Best in General Mathematics</li>
+                    </ul>
+                </li>
+                <li>🥈 - Academic Achiever Award: With High Honors - 10th Grade</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer" onclick="onTop()">
+        <h2>Back to Top?</h2>
     </div>
 </body>
 <script src="./assets/scripts.js"></script>
