@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --dark-grey: #424B54;
     --brown:#A18276;
@@ -84,34 +88,26 @@ body{
     align-items: center;
     gap: 2vh;
 }
-/* .about{
-    display: grid;
-    margin: auto;
-    z-index:2;
-    width: 90%;
-    background-color: #1f2327;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.918) 0px 6px 16px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
 
-} */
 .aboutTitle{
     grid-column: span 4;
     margin: auto;
     font-size: 5ch;
     
 }
+.meBox{
+    grid-column: span 2;
+    margin: auto;
+}
+.name{
+    text-align: center;
+    font-size: 3ch;
+}
 .me{
     width: 50vh;
     border: 10px double var(--brown);
     border-radius: 15px;
     margin: auto;
-    grid-column: span 2 ;
 }
 .orange{
     color: var(--orange)
@@ -190,52 +186,34 @@ body{
     transition: 0.6s ease-in-out;
     
 }
+.descNew{
+    grid-column: span 2;
+    text-decoration: none;
+    cursor: pointer;
 
-.hide{
+    text-align: center;
+
+}
+.descNew > summary{
+    list-style: none;
+    background-color: var(--orange);
+    padding: 5px;
+    border-radius: 15px;
+}
+.descNew > summary::-webkit-details-marker{
     display: none;
 }
-.showDescriptionBtn{
-    grid-column: span 2;
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    cursor: pointer;
-    height: 5vh;
-}
-.temp1{
-    grid-column: span 2;
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    cursor: pointer;
-    height: 10vh;
-}
-.closeBtn{
-    height: 10vh;
-    grid-column: span 2;
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    cursor: pointer;
-    
-}
-.temp2{
-    grid-column: span 2;
-    background-color: var(--orange);
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    cursor: pointer;
-    height: 10vh;
-}
-.temp3{
-    grid-column: span 2;
-    
+.descNew h4{
+    margin-top: 10px;
+    background-color: #1f2327;
+    text-align: justify;
 }
 .codeBtn{
     grid-column: span 2;
     text-decoration: none;
     text-align: center;
     padding: 5px;
+
     background-color: var(--orange);
     border-radius: 15px;
 }
@@ -249,11 +227,16 @@ body{
 }
 .accompNote{
     grid-column: span 4;
+    text-align: center;
 }
 .accompList{
     list-style: none;  
     grid-column: span 4;
-
+    margin: auto;
+    font-size: 1.7ch;
+}
+.mainList{
+    font-size: 2ch;
 }
 .footer{
     background-color: rgba(0, 0, 0, 0.918);
@@ -274,9 +257,13 @@ body{
     .banner h1{
         font-size: 5ch;
     }
-    .me{
+    .meBox{
+        display: flex;
+        flex-direction: column;
         grid-column: span 4;
+        margin: auto;
     }
+
     .aboutMe{
         grid-column: span 4;
         align-self: center;
@@ -327,7 +314,12 @@ body{
         height: 5vh;
         font-size: 2ch;
     }
-    
+    .accompNote{
+        font-size: 2ch;
+    }
+    .accompList{
+        font-size: 1.7ch;
+    }
 }
 @media only screen and (max-width: 510px){
     .aboutMe ul{
@@ -348,7 +340,10 @@ body{
     .navigation{
         padding: 1vh;
     }
-   
+    .me{
+        width: 30vh;
+    }
+
    .langContainer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -368,9 +363,7 @@ body{
     .aboutTitle{
         font-size: 2.6ch;
     }
-    .me{
-        width: 30vh;
-    }
+    
     .accompTitle{
         font-size: 3.5ch;
     }
