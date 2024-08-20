@@ -32,6 +32,9 @@ function changeImg(){
 }
 window.onload = changeImg;
 
+
+//Change text of button for description
+
 let boxTitleNum;
 
 
@@ -45,8 +48,76 @@ function changeTxt(){
  
 }
 
+//Mobile NavBar Scripts
+let navBar = document.querySelector('.navigation');
+
+function expandDec() {
+   navBar.style.width = '100%';
+   document.querySelector('.summMenu').setAttribute("onclick", " decreaseDec()");
+    
+}
+
+function decreaseDec(){
+    navBar.style.width = '25%';
+   document.querySelector('.summMenu').setAttribute("onclick", "expandDec()");
+}
+
+function closeMenuOnSelect(){
+    document.querySelector('.mobileNav').removeAttribute('open');
+    decreaseDec();
+}
+
+//Indicator for NavBar
+window.addEventListener("DOMContentLoaded", () => {
+    const marker = document.querySelectorAll('.marker');
+    const links = document.querySelectorAll('.navigation > ul > li > a');
+
+    window.addEventListener('scroll', (event) => {
+        if(typeof(marker) != 'undefined' && marker != 'undefined' && links != 'undefined'){
+            let scrollTop = window.scrollY;
+
+            links.forEach((link, index)=> {
+                link.classList.remove('active');
+            });
+
+            for(let i = marker.length-1; i>=0; i--){
+                if (scrollTop > marker[i].offsetTop - 75){
+                    links[i].classList.add('active');
+                    break;
+                }
+            }
+        }
+    })
+})
 
 
+//Indicator for Mobile NavBar
+window.addEventListener("DOMContentLoaded", () => {
+    const marker = document.querySelectorAll('.marker');
+    const links = document.querySelectorAll('.navigation > .mobileNav > .menuItems > a');
+
+    window.addEventListener('scroll', (event) => {
+        if(typeof(marker) != 'undefined' && marker != 'undefined' && links != 'undefined'){
+            let scrollTop = window.scrollY;
+
+            links.forEach((link, index)=> {
+                link.classList.remove('active');
+            });
+
+            for(let i = marker.length-1; i>=0; i--){
+                if (scrollTop > marker[i].offsetTop - 75){
+                    links[i].classList.add('active');
+                    break;
+                }
+            }
+        }
+    })
+})
+
+
+
+
+//Back to top
 function onTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

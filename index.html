@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Gian's Works and Portfolio">
+    <meta property="og:description" content="This is Gian's Portfolio of all the things he worked on and some information about him.">
+    <meta property="og:image" content="./assets/prevBanner.jpg">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Gian's Portfolio</title>
 </head>
 <body>
     <div class="navigation">
-        <ul>
+        <ul class="navOptions">
             <li><a href="#top">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#works">WORKS</a></li>
             <li><a href="#accomp">ACCOMPLISHMENTS</a></li>
         </ul>
+        <details class="mobileNav">
+            <summary class="summMenu" onclick="expandDec()">MENU</summary>
+            <div class="menuItems">
+                <br>
+                <a href="#top" onclick="closeMenuOnSelect()">HOME</a><br>
+                <br>
+                <a href="#about" onclick="closeMenuOnSelect()">ABOUT</a><br>
+                <br>
+                <a href="#works" onclick="closeMenuOnSelect()">WORKS</a><br>
+                <br>
+                <a href="#accomp" onclick="closeMenuOnSelect()">ACCOMPLISHMENTS</a>
+            </div>
+        </details>
     </div>
-    <div class="banner" id="top">
+    <div class="banner marker" id="top">
         <h1 class="bannerTitle">Gian's Works and Portfolio</h1>
     </div>
     <div class="content">
         <div class="box about">
-            <h2 class="aboutTitle" id="about">About Me</h2>
+            <h2 class="aboutTitle marker" id="about">About Me</h2>
             <div class="meBox">
                 <img src="./assets/me.jpg" alt="missing" class="me">
                 <h3 class="aboutMe">
@@ -75,7 +91,7 @@
             </div>
         </div>
         <div class="box works">
-            <h2 class="worksTitle" id="works">Works</h2>
+            <h2 class="worksTitle marker" id="works">Works</h2>
             <div class="workBox">
                 <h3 class="workBoxTitle">Student Directory</h3>
                 <img src="" alt="missing" class="workBoxPreview1">
@@ -155,7 +171,7 @@
                 <br><a href="https://github.com/GenericGithUser/MCQ2" target="_blank" rel="noopener noreferrer" class="noPrev codeBtn">Show Code (No Live Preview Available)</a>
             </div>
         </div>
-        <div class="box accomp">
+        <div class="box accomp marker">
             <h2 class="accompTitle" id="accomp">Accomplishments</h2>
             <h3 class="accompNote">
                 I don't really have awards relating to programming, only academic awards, so here's some:
