@@ -45,6 +45,7 @@ body{
     text-decoration: none;  
     color: var(--white);
     font-weight: bold;
+    
 }
 .banner{
     display: flex;
@@ -128,6 +129,25 @@ body{
     border: 10px double var(--brown);
     border-radius: 15px;
     margin: auto;
+}
+.schoolLogo{
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3px double var(--brown);
+}
+.schools{
+    margin-left: -30px;
+    
+}
+.schools > li{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    align-items: center;
+    column-gap:10px;
+    padding: 10px;
+    /* justify-items: center; */
+    
 }
 .orange{
     color: var(--orange)
@@ -240,14 +260,14 @@ body{
 
 .accompTitle{
         grid-column: span 4;
-        height: 2vh;
-        margin: auto;
+        text-align: center;
         font-size: 5ch;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
 }
 .accompNote{
     grid-column: span 4;
     text-align: center;
+    font-size: 4ch;
 }
 .accompList{
     list-style: none;  
@@ -268,6 +288,35 @@ body{
 
 .active{
     border-bottom: 5px solid var(--brown);
+}
+
+.certs{
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    
+    
+}
+.certBox{
+   border: 5px double var(--yellow);
+   border-radius: 15px;
+   padding: 10px;
+   /* Change this when More certs are added */
+   width: 75vh;
+   margin: auto;
+   
+}
+.certImg{
+    width: 70vh;
+    border-radius: 15px;
+}
+.certBox p{
+    text-align: center;
+    font-size: 2.5ch;
+    font-weight: 900;
+}
+.yellow{
+    color: var(--yellow);
 }
 
 @media only screen and (max-width: 1024px){
@@ -358,6 +407,12 @@ body{
     .accompTitle{
         font-size: 4ch;
     }
+    .certBox{
+        width: 35vh;
+    }
+    .certImg{
+        width: 32vh;
+    }
 }
 @media only screen and (max-width: 430px){
     .mobileNav{
@@ -391,6 +446,12 @@ body{
    .special{
     grid-column: span 3;
     margin: auto;
+   }
+   .schools{
+    margin-left: -50px;
+   }
+   .certImg{
+    width: 30vh;
    }
 }
 @media only screen and (max-width: 380px){

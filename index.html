@@ -16,8 +16,8 @@
         <ul class="navOptions">
             <li><a href="#top">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
-            <li><a href="#works">WORKS</a></li>
-            <li><a href="#accomp">ACCOMPLISHMENTS</a></li>
+            <li><a href="#works">PROJECTS</a></li>
+            <li><a href="#accomp">AWARDS AND CERTIFICATIONS</a></li>
         </ul>
         <details class="mobileNav">
             <summary class="summMenu" onclick="expandDec()">MENU</summary>
@@ -27,9 +27,9 @@
                 <br>
                 <a href="#about" onclick="closeMenuOnSelect()">ABOUT</a><br>
                 <br>
-                <a href="#works" onclick="closeMenuOnSelect()">WORKS</a><br>
+                <a href="#works" onclick="closeMenuOnSelect()">PROJECTS</a><br>
                 <br>
-                <a href="#accomp" onclick="closeMenuOnSelect()">ACCOMPLISHMENTS</a>
+                <a href="#accomp" onclick="closeMenuOnSelect()">AWARDS AND CERTIFICATIONS</a>
             </div>
         </details>
     </div>
@@ -46,28 +46,54 @@
                 </h3>
             </div>
             <h3 class="aboutMe">
-                
                 <ul>
                     <li><span class="orange">Full Name:</span>Gianmarlo Adrian S. Abril</li>
                     <li><span class="orange">Nicknames:</span>Generic / RickeyRodent</li>
                     <li><span class="orange">Age:</span> 19</li>
                     <li><span class="orange">Attended Schools:</span>
-                        <ul>
-                            <li>Baesa Adventist Educational Foundation</li>
-                            <p class="orange">Kinder to Grade 1</p>
-                            <li>Baesa Adventist Elementary School</li>
-                            <p class="orange">Grade 2 to Grade 6</p>
-                            <li>Baesa Adventist Academy</li>
-                            <p class="orange">Grade 7 to Grade 10</p>
-                            <li>San Francisco High School</li>
-                            <p class="orange">Grade 11 to Grade 12</p>
-                            <li>Polytechnic University of the Philippines</li>
-                            <p class="orange">Current School (1st Year)</p>
-                            <p class="orange">Bachelor of Science in Information Technology</p>
+                        <br>
+                        <br>
+                        <ul class="schools">
+                            <li>
+                                <img src="./assets/nologo.jpg" alt="missing" class="schoolLogo">
+                                <div class="schoolInfo">
+                                    Baesa Adventist Educational Foundation
+                                    <p class="orange">Kinder to Grade 1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./assets/baes.png" alt="missing" class="schoolLogo">
+                                <div class="schoolInfo">
+                                Baesa Adventist Elementary School
+                                <p class="orange">Grade 2 to Grade 6</p>
+                                </div>  
+                            </li>
+                        
+                            <li>
+                                <img src="./assets/baa.png" alt="missing" class="schoolLogo">
+                                <div class="schoolInfo">
+                                    Baesa Adventist Academy
+                                    <p class="orange">Grade 7 to Grade 10</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./assets/sfhs.png" alt="missing" class="schoolLogo">
+                                <div class="schoolInfo">
+                                    San Francisco High School
+                                    <p class="orange">Grade 11 to Grade 12</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./assets/PUP.png" alt="missing" class="schoolLogo">
+                                <div class="schoolInfo">
+                                    Polytechnic University of the Philippines
+                                    <p class="orange">Current School (1st Year)</p>
+                            <p class="orange yellow">Bachelor of Science in Information Technology</p>
+                                </div>
+                            </li>
                         </ul>
                     </li><br>
                     <li><span class="orange">Hobbies: </span>Tinkering with Technology, like modifying computers and phones. I also like History and researching about economics.</li>
-
                 </ul>
             </h3>
             <br>
@@ -91,7 +117,7 @@
             </div>
         </div>
         <div class="box works">
-            <h2 class="worksTitle marker" id="works">Works</h2>
+            <h2 class="worksTitle marker" id="works">Projects</h2>
             <div class="workBox">
                 <h3 class="workBoxTitle">Student Directory</h3>
                 <img src="" alt="missing" class="workBoxPreview1">
@@ -172,9 +198,9 @@
             </div>
         </div>
         <div class="box accomp marker">
-            <h2 class="accompTitle" id="accomp">Accomplishments</h2>
+            <h2 class="accompTitle" id="accomp">Awards and Certifications</h2>
             <h3 class="accompNote">
-                I don't really have awards relating to programming, only academic awards, so here's some:
+                Awards:
             </h3>
             <ul class="accompList mainList">
                 <li>🥈 - Academic Achiever Award: With High Honors - 12th Grade</li>
@@ -189,6 +215,20 @@
                 </li>
                 <li>🥈 - Academic Achiever Award: With High Honors - 10th Grade</li>
             </ul>
+            <br>
+            
+            <h3 class="accompNote">
+                Certifications:
+            </h3>
+            <div class="certs">
+                <div class="certBox">
+                    <a href="./assets/cert.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/cert.jpg" alt="missing" class="certImg" id="zuitWeb">
+                    </a>   
+                    <p>Zuit Basic Web Development Certification</p>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="footer" onclick="onTop()">
