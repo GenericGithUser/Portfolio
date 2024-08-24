@@ -119,13 +119,14 @@ body{
 .meBox{
     grid-column: span 2;
     margin: auto;
+    margin-top: 30px;
 }
 .name{
     text-align: center;
     font-size: 3ch;
 }
 .me{
-    width: 50vh;
+    width: 65vh;
     border: 10px double var(--brown);
     border-radius: 15px;
     margin: auto;
@@ -167,6 +168,7 @@ body{
     grid-column: span 4;
     gap: 5px;
 }
+
 .logo{
     width: 10vh;
     transition: 0.6s;
@@ -319,12 +321,25 @@ body{
     color: var(--yellow);
 }
 
+.hide{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 @media only screen and (max-width: 1024px){
    
     .navigation ul{ 
         grid-column: span 4;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr) ;
         font-size: 2.5vh;
     }    
     .banner h1{
