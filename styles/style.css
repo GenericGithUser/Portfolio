@@ -52,7 +52,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url(../assets/banner.jpg);
+    background: url(../assets/newbanner.jpeg);
     align-items: center;
     background-size: cover;
     background-position: center;
@@ -118,8 +118,9 @@ body{
 }
 .meBox{
     grid-column: span 2;
-    margin: auto;
     margin-top: 30px;
+    justify-items: center;
+    align-items: center;
 }
 .name{
     text-align: center;
@@ -129,8 +130,31 @@ body{
     width: 65vh;
     border: 10px double var(--brown);
     border-radius: 15px;
-    margin: auto;
+
 }
+.orgs{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin-top: 5px;
+    
+}
+.orgsTitle{
+    grid-column: span 2;
+    font-size: 2em;
+    text-align: center;
+}
+.orgBox{
+    grid-column: span 1;
+    justify-items: center;
+    margin-top: 15px;
+    
+}
+.orgTxt{
+    font-size: 1.3em;
+    text-align: center;
+}
+
 .schoolLogo{
     width: 100px;
     border-radius: 50%;
@@ -156,6 +180,10 @@ body{
 .aboutMe{
     font-size: 2.5ch;
     grid-column: span 2;
+}
+.mobileOrg{
+    display: none;
+    
 }
 .profLangs{
     grid-column: span 4;
@@ -346,12 +374,23 @@ body{
         font-size: 5ch;
     }
     .meBox{
-        display: flex;
-        flex-direction: column;
         grid-column: span 4;
         margin: auto;
     }
+    .mobileOrg{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: span 4;
+    }
+    
+    .orgBox{
+        grid-column: span 2;
+    }
 
+    .orgs{
+        display: none;
+    }
     .aboutMe{
         grid-column: span 4;
         align-self: center;
