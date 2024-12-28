@@ -18,14 +18,114 @@ html{
     margin: 0;
     color: var(--white);
 }
+.loadingScreen{
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-grey);
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+}
+
+.circles > .load{
+    background-color: rgba(255, 255, 255, 0.026);
+    border: 5px solid wheat;
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+    opacity: 0;
+    animation: loadingCircle 3s infinite ease-in-out;
+   
+}
+.circles2{
+    animation-delay: 1s;
+}
+.circles3{
+    animation-delay: 2s;
+}
+.circles4{
+    animation-delay: 3s;
+}
+    
+
+.spinnerLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 8;
+    
+    
+    
+    
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingCircle {
+    0%{
+        opacity: .25;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(40);
+    }
+}
+
+.spinnerLogo h1{
+    color: black;
+    font-size: 20ch;
+    font-weight: 1000;
+    background-color: maroon;
+    border-radius: 70%;
+    padding: 10px 40px 10px 40px;
+    animation: spinner 2s infinite;
+}
+
+.hidden{
+    display: none;
+}
+
 body{
     background-color: var(--dark-grey);
 }
+.main{
+    animation: show 1.5s ease-in-out;
+   
+    transition: all 1s ease-in-out;
+}
+@keyframes show {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .navigation{
     padding: 4vh;
     width: 100%;
     position: fixed;
-    z-index: 100000;
+    z-index: 4;
     transition: 0.7s;
     background-color: rgba(58, 57, 57, 0.288);
 }
@@ -515,7 +615,7 @@ body{
     }
     
     .me{
-        width: 40vh;
+        width: 35vh;
         
         
     }

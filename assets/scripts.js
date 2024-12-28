@@ -1,3 +1,24 @@
+
+//Loading Screen Script
+document.addEventListener("DOMContentLoaded", () =>{
+    const loadingScreen = document.querySelector(".loadingScreen");
+    const body = document.querySelector(".main");
+
+    loadingScreen.classList.remove("hidden");
+    
+
+    setTimeout(()=>{
+        body.classList.remove("hidden");
+    }, 2300);
+    setTimeout(() => {
+        loadingScreen.classList.add("hidden");
+        
+    }, 3000);
+
+});
+
+
+
 // Scrolling Navbar
 let nav = document.querySelector(".navigation");
 window.addEventListener("scroll", function(){
