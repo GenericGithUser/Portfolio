@@ -326,7 +326,7 @@ body{
     box-shadow: var(--brown) 0 0 4px 4px;
 }
 .conContainer{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 .works{
     grid-template-columns: repeat(3, 1fr);
@@ -624,9 +624,16 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
    }
+   .conContainer{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+   }
+   
+
    .special{
-    grid-column: span 3;
+    grid-column: span 2;
     margin: auto;
+
    }
    .schools{
     margin-left: -50px;
