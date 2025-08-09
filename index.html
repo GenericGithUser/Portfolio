@@ -5,268 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="Gian's Portfolio">
-    <meta property="og:image" content="/assets/prevBanner.jpg">
-    <meta property="og:description" content="This is Gian's Portfolio of all the things he worked on and some information about him.">
-    <meta name="description" content="This is Gian's Portfolio of all the things he worked on and some information about him.">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="genericportfolio.vercel.app">
-    <meta property="twitter:url" content="https://genericportfolio.vercel.app">
-    <meta name="twitter:title" content="Gian's Portfolio">
-    <meta name="twitter:description" content="This is Gian's Portfolio of all the things he worked on and some information about him.">
-    <meta property="twitter:image" content="/assets/prevBanner.jpg">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/styles/style.css">
     <title>Gian's Portfolio</title>
 </head>
-<div class="loadingScreen hidden">
-    <div class="circles">
-        <div class="circles1 load"></div>
-        <div class="circles2 load"></div>
-        <div class="circles3 load"></div>
-        <div class="circles4 load"></div>
-        <div class="spinnerLogo">
-            <h1>G</h1>
-        </div>
-    </div>
-    
-</div>
 <body>
-<div class="main hidden"> 
-    <div class="navigation">
-        <ul class="navOptions">
-            <li><a href="#top">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#works">PROJECTS</a></li>
-            <li><a href="#accomp">AWARDS AND CERTIFICATIONS</a></li>
+   <div class="main">
+    <div class="header">
+        <h2>Gian Abril</h2>
+        <ul class="headerMenus">
+            <li class="menu active" data-page="banner">Home</li>
+            <li class="menu" data-page="about">About</li>
+            <li class="menu" data-page="projects">Projects</li>
+            <li class="menu" data-page="certs">Certifications</li>
         </ul>
-        <details class="mobileNav">
-            <summary class="summMenu" onclick="expandDec()">MENU</summary>
-            <div class="menuItems">
-                <br>
-                <a href="#top" onclick="closeMenuOnSelect()">HOME</a><br>
-                <br>
-                <a href="#about" onclick="closeMenuOnSelect()">ABOUT</a><br>
-                <br>
-                <a href="#works" onclick="closeMenuOnSelect()">PROJECTS</a><br>
-                <br>
-                <a href="#accomp" onclick="closeMenuOnSelect()">AWARDS AND CERTIFICATIONS</a>
-            </div>
-        </details>
     </div>
-    <div class="banner marker" id="top">
-        <h1 class="bannerTitle">Gian's Portfolio</h1>
-    </div>
-    <div class="content">
-        <div class="box about">
-            <h2 class="aboutTitle marker" id="about">About Me</h2>
-            <div class="meBox hide">
-                <img src="./assets/me.PNG" alt="missing" class="me">
-                <h3 class="aboutMe">
-                    <p class="name">Hello! I'm Gian</p>
-                </h3>
-                <div class="orgs">
-                    <h3 class="orgsTitle orange">
-                        Organizations I'm In:
-                    </h3>
-                    <div class="orgBox">
-                        <img src="./assets/ibits.png" alt="missing" class="orgImg schoolLogo hide">
-                        <h4 class="orgTxt">Institute of Bachelors in Information Technology</h4>
-                    </div>
-                    <div class="orgBox">
-                        <img src="./assets/msc.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                        <h4 class="orgTxt">Microsoft Student Community - PUP Manila</h4>
-                        <h4 class="orgTxt orange">Web Development Team</h4>
-                    </div>
-                    <div class="orgBox">
-                        <img src="./assets/cncp.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                        <h4 class="orgTxt">Cisco NetConnect PUP - Manila</h4>
-                        <h4 class="orgTxt orange">Programming Department</h4>
-                    </div>
-                    <div class="orgBox">
-                        <img src="./assets/awsccpup.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                        <h4 class="orgTxt">AWS Cloud Clubs - PUP Manila</h4>
-                        <h4 class="orgTxt orange">Web Development Department</h4>
-                    </div>
-                </div>
-                
-            </div>
-            <h3 class="aboutMe">
-                <ul>
-                    <li><span class="orange">Full Name:</span>Gianmarlo Adrian S. Abril</li>
-                    <li><span class="orange">Nicknames:</span>Generic / RickeyRodent</li>
-                    <li><span class="orange">Age:</span> 19</li>
-                    <li><span class="orange">Attended Schools:</span>
-                        <br>
-                        <br>
-                        <ul class="schools">
-                            <li>
-                                <img src="./assets/nologo.jpg" alt="missing" class="schoolLogo hide">
-                                <div class="schoolInfo">
-                                    Baesa Adventist Educational Foundation
-                                    <p class="orange">Kinder to Grade 1</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="./assets/baes.png" alt="missing" class="schoolLogo hide">
-                                <div class="schoolInfo">
-                                Baesa Adventist Elementary School
-                                <p class="orange">Grade 2 to Grade 6</p>
-                                </div>  
-                            </li>
-                        
-                            <li>
-                                <img src="./assets/baa.png" alt="missing" class="schoolLogo hide">
-                                <div class="schoolInfo">
-                                    Baesa Adventist Academy
-                                    <p class="orange">Grade 7 to Grade 10</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="./assets/sfhs.png" alt="missing" class="schoolLogo hide">
-                                <div class="schoolInfo">
-                                    San Francisco High School
-                                    <p class="orange">Grade 11 to Grade 12</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="./assets/PUP.png" alt="missing" class="schoolLogo hide">
-                                <div class="schoolInfo">
-                                    Polytechnic University of the Philippines
-                                    <p class="orange">Current School (1st Year)</p>
-                            <p class="orange yellow">Bachelor of Science in Information Technology</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><span class="orange">Hobbies: </span>Tinkering with Technology, like modifying computers and phones. I also like History and researching about economics.</li>
-                </ul>
-            </h3>
-            <div class="mobileOrg">
-                <h3 class="orgsTitle orange">
-                    Organizations I'm In:
-                </h3>
-                <div class="orgBox">
-                    <img src="./assets/ibits.png" alt="missing" class="orgImg schoolLogo hide">
-                    <h4 class="orgTxt">Institute of Bachelors in Information Technology</h4>
-                </div>
-                <div class="orgBox">
-                    <img src="./assets/msc.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                    <h4 class="orgTxt">Microsoft Student Community - PUP Manila</h4>
-                    <h4 class="orgTxt orange">Web Development Team</h4>
-                </div>
-                <div class="orgBox">
-                    <img src="./assets/cncp.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                    <h4 class="orgTxt">Cisco NetConnect PUP - Manila</h4>
-                    <h4 class="orgTxt orange">Programming Department</h4>
-                </div>
-                <div class="orgBox">
-                    <img src="./assets/awsccpup.jpg"  alt="missing" class="orgImg schoolLogo hide">
-                    <h4 class="orgTxt">AWS Cloud Clubs - PUP Manila</h4>
-                    <h4 class="orgTxt orange">Web Development Team</h4>
+   <div class="pages">
+    <div class="page banner">
+        <div class="textHeader">
+            <h1>Gian Abril</h1>
+            <h2>Aspiring Programmer</h2>
+            <div class="socials">
+                <h3>Let's Connect!</h3>
+                <div class="socialLogosContainer">
+                    <a href="https://www.facebook.com/khoramshahr.13/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/facebook.svg" alt="" class="socialsLogos">
+                    </a>
+                    <a href="https://x.com/GenTwitUserr" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/twitter.svg" alt="" class="socialsLogos">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gian-abril-466914323" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/linkedin.svg" alt="" class="socialsLogos">
+                    </a>
+                    <a href="https://github.com/GenericGithUser" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/github.svg" alt="" class="socialsLogos">
+                    </a>
+                    <a href="mailto:personakkount@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/mail.svg" alt="" class="socialsLogos">
+                    </a>
                 </div>
             </div>
-            <div class="spacer">
 
-            </div>
-            <h2 class="profLangs">Used and Somewhat Proficient in Languages</h2>
-            <div class="langContainer hide">
-                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener noreferrer"><img src="./assets/html5.png" alt="missing" class="logo"></a>
-                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer"><img src="./assets/css3.png" alt="missing" class="logo"></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><img src="./assets/js.png" alt="missing" class="logo"></a>
-                <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer"><img src="./assets/sql.png" alt="missing" class="logo"></a>
-                <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><img src="./assets/php.png" alt="missing" class="logo"></a>
-                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener noreferrer"><img src="./assets/java.png" alt="missing" class="logo"></a>
-                
-            </div>
-            <h2 class="media profLangs">Contact and Socials</h2>
-            <div class="conContainer langContainer hide">
-                <a href="https://www.facebook.com/khoramshahr.13/" target="_blank" rel="noopener noreferrer"><img src="./assets/fb.png" alt="missing" class="logo"></a>
-                <a href="https://x.com/GenTwitUserr" target="_blank" rel="noopener noreferrer"><img src="./assets/bird.png" alt="missing" class="logo"></a>
-                <a href="mailto:personakkount@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/email.png" alt="missing" class="logo"></a>
-                <a href="https://github.com/GenericGithUser" target="_blank" rel="noopener noreferrer" ><img src="./assets/github.png" alt="missing" class="logo"></a>
-                <a href="https://www.linkedin.com/in/gian-abril-466914323" target="_blank" rel="noopener noreferrer"class="special"><img src="./assets/linkedin.png" alt="missing" class="logo"></a>
-            </div>
         </div>
-        <div class="box works">
-            <h2 class="worksTitle marker" id="works">Projects</h2>
-            <div class="workBox hide">
-                <h3 class="workBoxTitle">Student Directory</h3>
-                <img src="" alt="missing" class="workBoxPreview1">
-                <details class="descNew" onclick="boxTitleNum = 0; changeTxt()">
-                    <summary class="boxTitle0">Show Description</summary>
-                    <h4 class="description">The Student Directory, a Student Infromation System web application made during Grade 11 and was our Final Project. It is a collabortive work between me and Julius Castillejo, with some help of our other group mates. It has two functions, to view grades and info of students and modifying its info.</h4></h4>
-                </details>
-                <br><a href="https://github.com/GenericGithUser/studentDirectory" target="_blank" rel="noopener noreferrer" class="codeBtn noPrev">Show Code (No Live Preview Available)</a>
+    </div>
+    <div class="page about">
+        <h1>About Me</h1>
+        <div class="aboutMainCont">
+            <div class="description box">
+                <h2>Who Am I?:</h2>
+                <p>Hello! I am Gian Abril, an Aspiring Programmer that is trying to become a software developer<br>
+                    I have started programming during my 11th grade in Senior High School, with Web Development.<br>
+                    I am very willing to learn from other professionals on how to do things, and also a quick learner.</p>
             </div>
-            <div class="workBox hide">
-                <h3 class="workBoxTitle">Image Gallery</h3>
-                <img src="./pages/imggal-main/prev.png" alt="missing" class="workBoxPreview">
-                <details class="descNew" onclick="boxTitleNum = 1; changeTxt()">
-                    <summary class="boxTitle1">Show Description</summary>
-                    <h4 class="description">An Image Gallery, it was made for a performance task on the Empowerment Technology Subject, it features random pictures. The site itself is very minimalistic.</h4>
-                </details>
-                <br><a href="https://github.com/GenericGithUser/imggal" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
-                <br><a href="./pages/imggal-main/web/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            <div class="description box">
+                <h2>Hobbies:</h2>
+                <p>Tinkering with Technology, like modifying computers and phones. I also like History and researching about economics.</p>
             </div>
-            <div class="workBox hide">
-                <h3 class="workBoxTitle">English and Grammar Guide Website</h3>
-                <img src="./pages/pt2.2-main/prev.png" alt="missing" class="workBoxPreview">
-                <details class="descNew" onclick="boxTitleNum = 6; changeTxt()">
-                    <summary class="boxTitle6">Show Description</summary>
-                    <h4 class="description">A Simple English Grammar Guide site where there is some important information about the English Language and it also includes a test in the end. It only includes HTML and CSS.</h4>
-                </details>
-                <br><a href="https://github.com/GenericGithUser/pt2.2" target="_blank" rel="noopener noreferrer" class="codeBtn">Show Code</a>
-                <br><a href="./pages/pt2.2-main/index.html" target="_blank" rel="noopener noreferrer" class="codeBtn">Go to Site?</a>
+            <div class="education box">
+                <h2>Education:</h2>
+                <p>I am currently a 2nd year Student at Polytechnic University of the Philippines, with my program being Bachelor of Science in Information Technology</p>
+                <ul>
+                    <li class="current">
+                        <img src="./assets/images/schooLogos/PUP.png" alt="" class="schoolLogo">
+                        <div class="titleSchool">
+                            <h3>Polytechnic University of the Phillippines</h3>
+                            <h4>Current School</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/images/schooLogos/sfhs.png" alt="" class="schoolLogo">
+                        <div class="titleSchool">
+                            <h3>San Francisco Highschool</h3>
+                            <h4>Senior High School</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/images/schooLogos/baa.png" alt="" class="schoolLogo">
+                        <div class="titleSchool">
+                            <h3>Baesa Adeventist Academy</h3>
+                            <h4>Junior High School</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/images/schooLogos/baes.png" alt="" class="schoolLogo">
+                        <div class="titleSchool">
+                            <h3>Baesa Adventist Elementary School</h3>
+                            <h4>Elementary</h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="workBox hide last">
-                <h3 class="workBoxTitle">Java Multiple Choice Questionnaire</h3>
-                <img src="./pages/mcqprev.png" alt="missing" class="workBoxPreview">
-                <details class="descNew" onclick="boxTitleNum = 7;changeTxt()">
-                    <summary class="boxTitle7">Show Description</summary>
-                    <h4 class="description">A Multple Choice Questionnaire, made in Java. It is a proof concept for our final project in Java Programming, it is a 15 question questionnaire that grades your performance in answering it.</h4>
-                </details>
-                <br><a href="https://github.com/GenericGithUser/MCQ2" target="_blank" rel="noopener noreferrer" class="noPrev codeBtn">Show Code (No Live Preview Available)</a>
-            </div>
-        </div>
-        <div class="box accomp marker">
-            <h2 class="accompTitle" id="accomp">Awards and Certifications</h2>
-            <h3 class="accompNote">
-                Awards:
-            </h3>
-            <ul class="accompList mainList hide">
-                <li>🥈 - Academic Achiever Award: With High Honors - 12th Grade</li>
-                <li>🥈 - Academic Achiever Award: With High Honors - 11th Grade
-                    <ul class="accompList">
-                        <li>🏅 Best in Computer Programming</li>
-                        <li>🏅 Best in Practial Research 1</li>
-                        <li>🏅 Best in Understanding Culture Society and Politics</li>
-                        <li>🏅 Best in Statistics and Probability</li>
-                        <li>🏅 Best in General Mathematics</li>
-                    </ul>
-                </li>
-                <li>🥈 - Academic Achiever Award: With High Honors - 10th Grade</li>
-            </ul>
-            <br>
-            
-            <h3 class="accompNote">
-                Certifications:
-            </h3>
-            <div class="certs">
-                <div class="certBox hide">
-                    <a href="./assets/cert.jpg" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/cert.jpg" alt="missing" class="certImg" id="zuitWeb">
-                    </a>   
-                    <p>Zuit Basic Web Development Certification</p>
+            <div class="description box langs">
+                <h2>Languages I've Used:</h2>
+                <div class="langLogos">
+                    <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/html5.svg" alt="">
+                    </a>
+                    <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/css3.svg" alt="">
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/js.svg" alt="">
+                    </a>
+                    <a href="https://www.ibm.com/think/topics/structured-query-language" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/sql.svg" alt="">
+                    </a>
+                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/php.svg" alt="">
+                    </a>
+                    <a href="https://www.java.com/en/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/java.svg" alt="">
+                    </a>
+                    <a href="https://seriouscomputerist.atariverse.com/media/pdf/book/C%20Programming%20Language%20-%202nd%20Edition%20(OCR).pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/logos/c.svg" alt="">
+                    </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="page projects">
+        <h1>Projects</h1>
+        <div class="projectsSorter">
+            <h2>Sort By Languages: </h2>
+            <div class="projectLogos">
+                <img src="./assets/images/logos/all.svg" alt="" data-lang="ALL" class="sortBtn">
+                <img src="./assets/images/logos/html5.svg" alt="" data-lang="HTML" class="sortBtn">
+                <img src="./assets/images/logos/css3.svg" alt="" data-lang="CSS" class="sortBtn">
+                <img src="./assets/images/logos/js.svg" alt="" data-lang="JS" class="sortBtn">
+                <img src="./assets/images/logos/sql.svg" alt="" data-lang="SQL" class="sortBtn">
+                <img src="./assets/images/logos/php.svg" alt="" data-lang="PHP" class="sortBtn">
+                <img src="./assets/images/logos/java.svg" alt="" data-lang="JAVA" class="sortBtn">
+                <img src="./assets/images/logos/c.svg" alt="" data-lang="C" class="sortBtn">
+            </div>
+        </div>
+        <div class="cardContainer">
+            <template id="card">
+                <div class="card">
+                    <h2 class="cardTitle"></h2>
+                    <img src="" alt="" class="boxImage">
+                    <p class="langs"></p>
+                    <details class="descriptionBox">
+                        <summary class="descriptionBtn">
+                            Description
+                        </summary>
+                        <h4 class="desc">
+                        </h4>
+                    </details>
+                    <a href="" class="linker" target="_blank"></a>
+                </div>
+            </template>
             
         </div>
     </div>
-    <div class="footer" onclick="onTop()">
-        <h2>Back to Top?</h2>
+    <div class="page certs ">
+        <h1 class="titleCert">Certifications</h1>
+        <div class="certContainer">
+            <div class="certBox">
+                <a href="./assets/images/certs/basicWeb.jpg" target="_blank" rel="noopener noreferrer"><img src="./assets/images/certs/basicWeb.jpg" alt="" class="certImg"></a>
+                <h2 class="certTitle">Zuit Basic Web Development <br>Certification</h2>
+            </div>
+            <div class="certBox">
+                <a href="./assets/images/certs/js.jpg" target="_blank" rel="noopener noreferrer"><img src="./assets/images/certs/js.jpg" alt="" class="certImg"></a>
+                <h2 class="certTitle">Cisco Networking Academy <br> JavaScript Essentials 1 Badge</h2>
+            </div>
+        </div>
     </div>
-</div>
+   </div>
+   </div>
 </body>
-<script src="./assets/scripts.js"></script>
+<script src="./assets/scripts/script.js"></script>
 </html>
