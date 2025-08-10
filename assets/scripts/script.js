@@ -50,11 +50,13 @@ const cardData = [
 ];
 
 
-
-
-
-
-
+const navBarMobile = document.querySelector('.header-Mobile');
+const menuBtn = document.getElementById("menuBtn");
+menuBtn.addEventListener('click', ()=>{
+    navBarMobile.classList.toggle('activate');
+    menuBtn.classList.toggle('rotate');
+    
+});
 
 
 
@@ -115,6 +117,7 @@ function renderCards(langFliter = "ALL") {
             const cardElement = clone.querySelector('.card');
 
             clone.querySelector('.cardTitle').textContent = data.title;
+            clone.querySelector('.imageShow').href = data.image;
             clone.querySelector('.boxImage').src = data.image;
             clone.querySelector('.langs').textContent = data.langs.join(" ");
             clone.querySelector('.desc').textContent = data.description;

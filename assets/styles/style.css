@@ -49,8 +49,12 @@ body{
     background-color: rgba(38, 38, 190, 0.692);
     
 }
-
-
+.header-Mobile{
+    display: none;
+}
+#menuBtn{
+    display: none;
+}
 .header > .headerMenus > .menu{
     cursor: pointer;
     text-decoration: none;
@@ -342,6 +346,7 @@ body{
     width: 15%;
     border: 3px solid var(--secondary);
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.918) 0px 6px 16px;
     background-color: azure;
     padding: 10px;
     transform: translateY(10px);
@@ -356,7 +361,7 @@ body{
     font-size: 2ch;
     font-weight: 900;
 }
-.projects>.cardContainer>.card>.boxImage{
+.projects>.cardContainer>.card>a>.boxImage{
     width: 100%;
     height: 15vh;
     border: 5px solid var(--fourth);
@@ -487,6 +492,9 @@ body{
 }
 
 @media only screen and (max-width:970px){
+    .banner>.textHeader{
+        width: 70%;
+    }
     .about>.aboutMainCont>.description>.langLogos>a>img {
         width: 7.7vh;
     }
@@ -495,7 +503,7 @@ body{
 @media only screen and (max-width:950px){
     .about>.aboutMainCont{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
     .about>.aboutMainCont>.description{
@@ -520,3 +528,242 @@ body{
     }
 }
 
+@media only screen and (max-width:768px){
+    .banner > .textHeader > .socials{
+        width: 40%;
+    }
+    
+    .about>.aboutMainCont>.description{
+        width: 80%;
+    }
+    .about>.aboutMainCont>.education{
+        width: 80%;
+    }
+    .projects>.cardContainer>.card {
+        width: 30%;
+    }
+    .projects>.cardContainer>.card>a>.boxImage{
+        height: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:680px){
+    .header{
+        display: none;
+    }
+    .header-Mobile{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2vh;
+        width: 0%;
+        opacity: 0;
+        position: fixed;
+        z-index: 3;
+        transition: 0.7s;
+        background-color: rgba(38, 38, 190, 0.377);
+        overflow: hidden;
+        pointer-events: none;
+        
+    }
+    .activate{
+        pointer-events: auto;
+        width: 100%;
+        opacity: 1;
+    }
+    .rotate{
+        transform: rotate(90deg);
+    }
+    #menuBtn{
+        display: block;
+        align-self: flex-start;
+        background-color: var(--text);
+        width: 2.5em;
+        z-index: 4;
+        position: fixed;
+        transition: all 0.4s ease-in-out;
+    }
+    .header-Mobile>.headerMenus{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        list-style: none;
+        gap: 6px;
+        color:var(--text);
+        border-radius: 10px;
+        font-weight: 600;
+        vertical-align: baseline;
+        
+    }
+    
+    .header-Mobile>.headerMenus>.menu{
+        display: flex;
+        gap: 5px;
+    }
+    .header-Mobile>.headerMenus>.menu>img{
+        height: 1.2em;
+        vertical-align: middle;
+        filter: invert(91%) sepia(86%) saturate(2165%) hue-rotate(180deg) brightness(110%) contrast(104%);
+    }
+    .header-Mobile>.headerMenus>.active>img{
+        vertical-align: middle;
+        filter: none;
+    }
+    .headerMenus>.active {
+        background-color: var(--text);
+        padding: 3px;
+        color: #252323;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+     }
+    
+    
+    .banner{
+        background-image: url(/assets/images/newBannerMobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner > .textHeader{
+        margin-top: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .banner > .textHeader > h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner > .textHeader > .socials{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .socialLogosContainer>a>img{
+        width: 6vw;
+    }
+    .banner>.textHeader>.socials{
+        width: 50%;
+    }
+
+    .about>.aboutMainCont>.description{
+        width: 90%;
+    }
+    .about>.aboutMainCont>.education{
+        width: 90%;
+    }
+    .about>.aboutMainCont>.langs>.langLogos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .about>.aboutMainCont>.description>.langLogos>a>img {
+        width: 9vh;
+    }
+    .projects>.cardContainer>.card{
+        width: 40%;
+    }
+    .certs>.certContainer>.certBox>a>.certImg{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width:580px){
+     .banner>.textHeader>h1{
+        font-size: 10ch;
+     }
+     .projects>.cardContainer>.card{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:520px){
+    .banner>.textHeader>h1{
+        font-size: 9ch;
+     }
+     .banner>.textHeader>h2 {
+        width: 50%;
+        font-size: 2ch;
+    }
+    .about>.aboutMainCont{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about>.aboutMainCont>.description{
+        width: 90%;
+    }
+    .about>.aboutMainCont>.education{
+        width: 90%;
+    }
+    .about>.aboutMainCont>.langs{
+        height: 100%;
+    }
+
+    .projects>.projectsSorter>.projectLogos{
+        flex-wrap: wrap;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects>.cardContainer>.card {
+        width: 70%;
+    }
+    .certs>.certContainer{
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    .certs>.certContainer>.certBox{
+        width: 100%;
+    }
+    .certs>.certContainer>.certBox>a>.certImg{
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width:485px){
+    .banner>.textHeader>h1{
+        font-size: 7.5ch;
+     }
+     .socialLogosContainer>a>img{
+        width: 9vw;
+    }
+    .banner>.textHeader>h2{
+        width: 60%;
+        
+    }
+    .banner > .textHeader > .socials{
+        width: 70%;
+    }
+    .about>.aboutMainCont>.description>.langLogos>a>img {
+        width: 7vh;
+    }
+}
+@media only screen and (max-width:410px){
+    .banner>.textHeader>h1{
+        font-size: 6.5ch;
+     }
+     .banner>.textHeader>h2{
+        font-size: 1.8ch;
+     }
+     .projects>.projectsSorter>.projectLogos{
+        width: 65%;
+     }
+     .projects>.cardContainer>.card{
+        width: 80%;
+     }  
+     .banner>.textHeader>.socials{
+        width: 80%; 
+    }
+}
+
+@media only screen and (max-width:380px){
+    .banner>.textHeader>h1{
+        font-size: 5ch;
+     }
+     .banner>.textHeader>h2 {
+        font-size: 1.5ch;
+        width: 70%;
+     }
+     
+}
