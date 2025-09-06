@@ -52,11 +52,38 @@ const cardData = [
 
 const navBarMobile = document.querySelector('.header-Mobile');
 const menuBtn = document.getElementById("menuBtn");
+const mainBox = document.querySelector('.pages');
+const menus = document.querySelectorAll('.menu');
+let frozen = false;
 menuBtn.addEventListener('click', ()=>{
     navBarMobile.classList.toggle('activate');
     menuBtn.classList.toggle('rotate');
+
+    frozen = navBarMobile.classList.contains('activate');
+
     
 });
+
+menus.forEach(item => {
+    item.addEventListener('click', ()=>{
+        navBarMobile.classList.remove('activate');
+        menuBtn.classList.remove('rotate');
+        frozen = false;
+    });
+});
+mainBox.addEventListener('click', (event)=>{
+        if (frozen) {
+            event.stopPropagation();
+            event.preventDefault();
+        }
+        if (navBarMobile.classList.contains('activate')) {
+            frozen = true;
+            console.log("isTrue");
+        }else if (!navBarMobile.classList.contains('activate')){
+            frozen = false;
+            console.log("isFalse")
+        }
+    });
 
 
 

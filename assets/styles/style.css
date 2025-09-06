@@ -457,6 +457,10 @@ body{
     width: 20vw;
 }
 
+.disable{
+    pointer-events: none;
+}
+
 @media only screen and (max-width:1270px){
     .about>.aboutMainCont>.description>.langLogos>a>img {
         width: 7vh;
@@ -555,20 +559,21 @@ body{
     .header-Mobile{
         display: flex;
         justify-content: space-evenly;
-        padding: 2vh;
+        padding: 1.5vh;
         width: 0%;
         opacity: 0;
+        height: 100%;
         position: fixed;
         z-index: 3;
         transition: 0.7s;
-        background-color: rgba(38, 38, 190, 0.377);
+        background-color: rgba(38, 38, 190, 0.541);
         overflow: hidden;
         pointer-events: none;
         
     }
     .activate{
         pointer-events: auto;
-        width: 100%;
+        width: 70%;
         opacity: 1;
     }
     .rotate{
@@ -585,10 +590,10 @@ body{
     }
     .header-Mobile>.headerMenus{
         display: flex;
-        width: 90%;
+        margin-top: 10vw;
+        width: 100%;
         flex-direction: column;
-        justify-content: baseline;
-        align-items: center;
+        align-items: start;
         list-style: none;
         gap: 6px;
         color:var(--text);
@@ -600,7 +605,8 @@ body{
     
     .header-Mobile>.headerMenus>.menu{
         display: flex;
-        gap: 5px;
+        font-size: 2.7ch;
+        gap: 10px;
     }
     .header-Mobile>.headerMenus>.menu>img{
         height: 1.2em;
