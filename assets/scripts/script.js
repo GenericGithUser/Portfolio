@@ -10,7 +10,7 @@ const cardData = [
     {
         title: "Image Gallery",
         image: "./assets/images/previews/imgGal.png",
-        langs: ["HTML", "CSS", "ALL"],
+        langs: ["HTML", "CSS", "JS", "ALL"],
         description: "An Image Gallery, it was made for a performance task on the Empowerment Technology Subject, it features random pictures. The site itself is very minimalistic.",
         link: "https://imggal.vercel.app/",
         goTo: "Go to Preview"
