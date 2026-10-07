@@ -142,13 +142,13 @@ let page = 0;
 document.addEventListener('keydown', (e)=>{
     e.preventDefault();
 
-    if ((e.key === "ArrowRight" || e.key === "ArrowDown") && page < 3) {
+    if (e.key === "ArrowRight"  && page < 3) {
         page++;
         navButtons.forEach(a=>a.classList.remove('active'));
         document.querySelector(`.menu[data-page="${menuData[page]}"]`).classList.add('active');
         goToPage(menuData[page]);
     }
-    else if((e.key === "ArrowLeft" || e.key === "ArrowUp") && page !== 0){
+    else if(e.key === "ArrowLeft"  && page !== 0){
         page--;
         navButtons.forEach(a=>a.classList.remove('active'));
         document.querySelector(`.menu[data-page="${menuData[page]}"]`).classList.add('active');
