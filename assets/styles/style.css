@@ -139,7 +139,7 @@ body{
     margin-top: 10px;
     padding: 3px;
     background-color: var(--fourth);
-    width: 40%;
+    width: 55%;
     text-align: center;
     color: var(--secondary);
     border-radius: 10px;
@@ -151,7 +151,7 @@ body{
     padding: 5px;
     row-gap: 10px;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     background-color: #252323a2;
     border-radius: 10px;
     color: var(--text);
@@ -165,7 +165,7 @@ body{
 }
 .socialLogosContainer > a > img{
     background-color: var(--secondary);
-    width: 3vw;
+    width: 3.5vw;
     padding: 2px;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
@@ -472,10 +472,10 @@ body{
         font-size: 11ch;
     }
     .banner>.textHeader>h2 {
-        width: 60%;
+        width: 70%;
     }
     .banner > .textHeader > .socials{
-        width: 50%;
+        width: 60%;
     }
     .socialLogosContainer > a > img {
         width: 4vw;
@@ -497,7 +497,7 @@ body{
 
 @media only screen and (max-width:970px){
     .banner>.textHeader{
-        width: 70%;
+        width: 80%;
     }
     .about>.aboutMainCont>.description>.langLogos>a>img {
         width: 7.7vh;
@@ -534,7 +534,7 @@ body{
 
 @media only screen and (max-width:768px){
     .banner > .textHeader > .socials{
-        width: 40%;
+        width: 60%;
     }
     
     .about>.aboutMainCont>.description{
@@ -649,7 +649,7 @@ body{
         margin-right: auto;
     }
     .socialLogosContainer>a>img{
-        width: 6vw;
+        width: 6.5vw;
     }
     .banner>.textHeader>.socials{
         width: 50%;
@@ -729,7 +729,7 @@ body{
 
 @media only screen and (max-width:485px){
     .banner>.textHeader>h1{
-        font-size: 7.5ch;
+        font-size: 8.5ch;
      }
      .socialLogosContainer>a>img{
         width: 9vw;
@@ -739,7 +739,7 @@ body{
         
     }
     .banner > .textHeader > .socials{
-        width: 70%;
+        width: 80%;
     }
     .about>.aboutMainCont>.description>.langLogos>a>img {
         width: 7vh;
@@ -747,7 +747,7 @@ body{
 }
 @media only screen and (max-width:410px){
     .banner>.textHeader>h1{
-        font-size: 6.5ch;
+        font-size: 7.5ch;
      }
      .banner>.textHeader>h2{
         font-size: 1.8ch;
@@ -765,7 +765,7 @@ body{
 
 @media only screen and (max-width:380px){
     .banner>.textHeader>h1{
-        font-size: 5ch;
+        font-size: 6.5ch;
      }
      .banner>.textHeader>h2 {
         font-size: 1.5ch;
